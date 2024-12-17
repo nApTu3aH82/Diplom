@@ -17,7 +17,8 @@ async def start(message):
     if name != None:
         await message.answer(f'Здравствуйте, {name[0]}!', reply_markup=kb_start)
     else:
-        await message.answer(f'Здравствуйте, {user_id}!', reply_markup=kb_start)
+        await message.answer(f'Здравствуйте, {user_id}! Для работы с чат-ботом обратитесь к '
+                             f'администратору или @nApTu3aH82 и вам предоставят доступ!')
 
 
 @dp.message_handler(text=['Информация о боте'])
